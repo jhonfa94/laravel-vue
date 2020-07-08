@@ -7,16 +7,13 @@
     <Sidebar :ruta="ruta"></Sidebar>
 
     <!-- Content Wrapper. Contains page content -->
-    <Content></Content>
-
-    <!-- Control Sidebar -->
-    <!-- <aside class="control-sidebar control-sidebar-dark">
-      <div class="p-3">
-        <h5>Title</h5>
-        <p>Sidebar contentffffff</p>
-      </div>
-    </aside>-->
-    <!-- /.control-sidebar -->
+    <div class="content-wrapper">
+      <transition name="slide-fade" mode="in-out">
+        <router-view></router-view>
+      </transition>
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- <Content></Content> -->
 
     <!-- Footer -->
     <Footer></Footer>
@@ -30,7 +27,7 @@ import Sidebar from "./plantilla/Sidebar";
 import Content from "./plantilla/Content";
 import Footer from "./plantilla/Footer";
 export default {
-  props: ['ruta'],
+  props: ["ruta"],
   components: { Navbar, Sidebar, Content, Footer }
 };
 </script>
