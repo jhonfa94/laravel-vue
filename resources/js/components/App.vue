@@ -24,10 +24,9 @@
 <script>
 import Navbar from "./plantilla/Navbar";
 import Sidebar from "./plantilla/Sidebar";
-import Content from "./plantilla/Content";
 import Footer from "./plantilla/Footer";
 export default {
   props: ["ruta"],
-  components: { Navbar, Sidebar, Content, Footer }
+  components: { Navbar, Sidebar, Footer }
 };
 </script>
