@@ -17,6 +17,8 @@ Route::get('/{optional?}', function () {
     return view('home');
 })->name('basepath');
 
+Route::get('/administracion/usuario/getListarUsuarios', 'Administracion\UsersController@getListarUsuarios' )->name('administracion.users.list');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

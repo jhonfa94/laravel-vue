@@ -31217,6 +31217,35 @@ a.text-muted:hover {
 
 [class*="accent-"] a.btn-dark {
   color: #ffffff;
+}.slide-fade-enter {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+    transition: all 0.2s ease;
+}
+
+.slide-fade-leave-to {
+    transform: translateX(-10px);
+    opacity: 0;
+}
+
+/* ===================== 
+  Estilos boton 
+========================= */ 
+
+.btnWidth {
+    width: 49% !important;
+}
+
+.el-select {
+    width: 100% !important;
+}
+
+.user-block {
+    list-style: none;
 }@charset "UTF-8";
 
 /*!
